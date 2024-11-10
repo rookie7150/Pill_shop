@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <section class="banner" id="sec">
+        <header>
+            <a href="#" class="logo">NKUST</a>
+            <div>
+                <div id="toggle" onclick="toggle()"></div>
+                <div id="mode"><i class="indicator"></i></div>
+            </div>
+        </header>
+        <div class="content">
+            <h1>國立高雄科技大學<br><span>智慧藥局</span></h1>
+            <p>吳紀緯&nbsp;陳俞安<br>張凱荃&nbsp;楊立鼎</p>
+            <a href="#">Know More</a>
+        </div>
+        <div class="water">
+            <h2>Smart Pharmacy</h2>
+            <h2>Smart Pharmacy</h2>
+        </div>
+        <ul class="sci">
+            <li style="--clr:#3975EA">
+                <a href="#">
+                    <i class="fa-brands fa-facebook"></i>
+                    <span>Facebook</span>
+                </a>
+            </li>
+            <li style="--clr:#1da1f2">
+                <a href="#">
+                    <i class="fa-brands fa-twitter"></i>
+                    <span>Twitter</span>
+                </a>
+            </li>
+            <li style="--clr:#c13584">
+                <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                    <span>Instagram</span>
+                </a>
+            </li>
+        </ul>
+    </section>
+    <div id="navigation">
+        <ul>
+            <li style="--clr:#00ade1"><a href="#" data-text="&nbsp;Home">&nbsp;Home&nbsp;</a></li>
+            <li style="--clr:#ff6493"><a id="store" data-text="&nbsp;Store">&nbsp;Store&nbsp;</a></li>
+            <li style="--clr:#ffdd1c"><a id="registration" data-text="&nbsp;Registration">&nbsp;Registration&nbsp;</a></li>
+            <li style="--clr:#00dc82"><a id="consult" data-text="&nbsp;Consult">&nbsp;Consult&nbsp;</a></li>
+            <li style="--clr:#dc00d4"><a id="logout" data-text="&nbsp;Logout">&nbsp;Logout&nbsp;</a></li>
+        </ul>
+    </div>
+    <script src="home.js" type="module"></script>
+</body>
+</html>

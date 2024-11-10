@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="store.css">
+</head>
+<body>
+    <section class="banner" id="sec">
+        <header>
+            <a href="" class="logo">NKUST</a>
+            <div class="search">
+                <form>
+                    <input type="text" placeholder="Type...">
+                    <input type="button" id="selButton" value="Search">
+                </form>
+            </div>
+            <div>
+                <div id="toggle" onclick="toggle()"></div>
+                <div id="mode"><i class="indicator"></i></div>
+            </div>
+        </header>
+        <div>
+            <ul class="class">
+                <li class="active"><a href="#">保健</a></li>
+                <li><a href="#">醫療用品</a></li>
+                <li><a href="#">生活用品</a></li>
+                <li><a href="#">食品</a></li>
+                <li><a href="#">婦幼</a></li>
+                <li class="slide"></li>
+            </ul>
+        </div>
+        <div class="container">
+            <div class="card">
+                <div class="imgBox">
+                    <img src="mat/nexcare.jpg">
+                    <ul class="action">
+                        <li>
+                            <i class="fa fa-heart" aria-hidden="true"></i>
+                            <span>Add to Wishlist</span>
+                        </li>
+                        <li>
+                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                            <span>Add to Cart</span>
+                        </li>
+                        <li>
+                            <i class="fa fa-eye" aria-hidden="true"></i>
+                            <span>View Details</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="info">
+                    <div class="productName">
+                        <h3>OK<b>蹦</b></h3>
+                    </div>
+                    <div class="price_rating">
+                        <h2>$100</h2>
+                        <div class="rating">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star gray" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgBox">
+                    <img src="mat/Alcohol.jpg">
+                    <ul class="action">
+                        <li>
+                            <i class="fa fa-heart" aria-hidden="true"></i>
+                            <span>Add to Wishlist</span>
+                        </li>
+                        <li>
+                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                            <span>Add to Cart</span>
+                        </li>
+                        <li>
+                            <i class="fa fa-eye" aria-hidden="true"></i>
+                            <span>View Details</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="info">
+                    <div class="productName">
+                        <h3><b>酒精</b></h3>
+                    </div>
+                    <div class="price_rating">
+                        <h2>$100</h2>
+                        <div class="rating">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star gray" aria-hidden="true"></i>
+                            <i class="fa fa-star gray" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgBox">
+                    <img src="mat/vitamin.jpg">
+                    <ul class="action">
+                        <li>
+                            <i class="fa fa-heart" aria-hidden="true"></i>
+                            <span>Add to Wishlist</span>
+                        </li>
+                        <li>
+                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                            <span>Add to Cart</span>
+                        </li>
+                        <li>
+                            <i class="fa fa-eye" aria-hidden="true"></i>
+                            <span>View Details</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="info">
+                    <div class="productName">
+                        <h3><b>維他命</b></h3>
+                    </div>
+                    <div class="price_rating">
+                        <h2>$100</h2>
+                        <div class="rating">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgBox">
+                    <img src="mat/mask.jpg">
+                    <ul class="action">
+                        <li>
+                            <i class="fa fa-heart" aria-hidden="true"></i>
+                            <span>Add to Wishlist</span>
+                        </li>
+                        <li>
+                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                            <span>Add to Cart</span>
+                        </li>
+                        <li>
+                            <i class="fa fa-eye" aria-hidden="true"></i>
+                            <span>View Details</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="info">
+                    <div class="productName">
+                        <h3><b>口罩</b></h3>
+                    </div>
+                    <div class="price_rating">
+                        <h2>$100</h2>
+                        <div class="rating">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star gray" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgBox">
+                    <img src="mat/sesamin.jpg">
+                    <ul class="action">
+                        <li>
+                            <i class="fa fa-heart" aria-hidden="true"></i>
+                            <span>Add to Wishlist</span>
+                        </li>
+                        <li>
+                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                            <span>Add to Cart</span>
+                        </li>
+                        <li>
+                            <i class="fa fa-eye" aria-hidden="true"></i>
+                            <span>View Details</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="info">
+                    <div class="productName">
+                        <h3><b>芝麻素</b></h3>
+                    </div>
+                    <div class="price_rating">
+                        <h2>$100</h2>
+                        <div class="rating">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star gray" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgBox">
+                    <img src="mat/fishoil.jpg">
+                    <ul class="action">
+                        <li>
+                            <i class="fa fa-heart" aria-hidden="true"></i>
+                            <span>Add to Wishlist</span>
+                        </li>
+                        <li>
+                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                            <span>Add to Cart</span>
+                        </li>
+                        <li>
+                            <i class="fa fa-eye" aria-hidden="true"></i>
+                            <span>View Details</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="info">
+                    <div class="productName">
+                        <h3><b>魚油</b></h3>
+                    </div>
+                    <div class="price_rating">
+                        <h2>$100</h2>
+                        <div class="rating">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star gray" aria-hidden="true"></i>
+                            <i class="fa fa-star gray" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgBox">
+                    <img src="mat/probiotics.jpg">
+                    <ul class="action">
+                        <li>
+                            <i class="fa fa-heart" aria-hidden="true"></i>
+                            <span>Add to Wishlist</span>
+                        </li>
+                        <li>
+                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                            <span>Add to Cart</span>
+                        </li>
+                        <li>
+                            <i class="fa fa-eye" aria-hidden="true"></i>
+                            <span>View Details</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="info">
+                    <div class="productName">
+                        <h3><b>益生菌</b></h3>
+                    </div>
+                    <div class="price_rating">
+                        <h2>$100</h2>
+                        <div class="rating">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star gray" aria-hidden="true"></i>
+                            <i class="fa fa-star gray" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgBox">
+                    <img src="mat/hotrm.jpg">
+                    <ul class="action">
+                        <li>
+                            <i class="fa fa-heart" aria-hidden="true"></i>
+                            <span>Add to Wishlist</span>
+                        </li>
+                        <li>
+                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                            <span>Add to Cart</span>
+                        </li>
+                        <li>
+                            <i class="fa fa-eye" aria-hidden="true"></i>
+                            <span>View Details</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="info">
+                    <div class="productName">
+                        <h3><b>退熱貼</b></h3>
+                    </div>
+                    <div class="price_rating">
+                        <h2>$100</h2>
+                        <div class="rating">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star gray" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="navigation">
+        <ul>
+            <li style="--clr:#00ade1"><a id="home" data-text="&nbsp;Home">&nbsp;Home&nbsp;</a></li>
+            <li style="--clr:#ff6493"><a href="#" data-text="&nbsp;Store">&nbsp;Store&nbsp;</a></li>
+            <li style="--clr:#ffdd1c"><a id="registration" data-text="&nbsp;Registration">&nbsp;Registration&nbsp;</a></li>
+            <li style="--clr:#00dc82"><a id="consult" data-text="&nbsp;Consult">&nbsp;Consult&nbsp;</a></li>
+            <li style="--clr:#dc00d4"><a id="logout" data-text="&nbsp;Logout">&nbsp;Logout&nbsp;</a></li>
+        </ul>
+    </div>
+    <script src="store.js" type="module"></script>
+    <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('li').on('click', function() {
+                $(this).siblings().removeClass('active');
+                $(this).addClass('active');  
+            })
+        })
+    </script>
+</body>
+</html>
